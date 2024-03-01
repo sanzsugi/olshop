@@ -1,0 +1,127 @@
+import 'package:flutter/material.dart';
+
+class Product {
+  final String image, title, description, price, size;
+  final int id;
+  final Color color;
+  Product({
+    this.id,
+    this.image,
+    this.title,
+    this.price,
+    this.description,
+    this.size,
+    this.color,
+  });
+}
+
+List<Product> products = [
+  Product(
+      id: 1,
+      title: "LEGION BoostStation GPU DOCK RTX2060 6GB",
+      price: "14.999.999",
+      size: "36 x 17 x 21",
+      description:
+          "Legion BoostStation Graphics Booster 82CA001GID external GPU Dock NVIDIA GeForce RTX 2060 6GB,",
+      image: "assets/images/gpu_dock.png",
+      color: Color(0xFF9E9E9E)),
+  Product(
+      id: 2,
+      title: "LEGION HEADPHONE H500 PRO",
+      price: "1.099.999",
+      size: "256 x 241 x 10",
+      description:
+          "Lenovo Legion H500 Pro 7.1 is the ultimate tool for pro gamers, with the stylishness of the Legion series design language. Immerse yourself completely in your favorite action game, music or movie, with superb driverless 7.1 surround sound and dedicated audio profiles. Stay engaged for hours, thanks to the ergonomic design of the construction and ear cups. (3.5mm or USB connection for multi-platform)",
+      image: "assets/images/H500pro.png",
+      color: Color(0XFFB2EBF2)),
+  Product(
+      id: 3,
+      title: "LEGION KEYBOARD K500",
+      price: "1.199.999",
+      size: "480 x 204 x 65",
+      description:
+          "The Legion K500 RGB Mechanical Gaming Keyboard is a full-sized, wired gaming keyboard that’s designed for comfort and simplicity. The minimalistic design has eight essential keys, with. The mechanical switch delivers fantastic and consistent comfort for daily gaming. The keyboard is 104-keys roll over, all keys programmable, and is well-built with a detachable palm rest.",
+      image: "assets/images/K500.png",
+      color: Color(0XFFBBDEFB)),
+  Product(
+      id: 4,
+      title: "LEGION 5 PRO",
+      price: "25.999.999",
+      size: "65 x 260 x 24",
+      description:
+          "With the all-new AMD Ryzen™ 5000 H-Series Mobile Processors, you can enjoy the best competitive gaming performance on a thin and light notebook with amazing battery life. Never compromise on your gaming laptop again.",
+      image: "assets/images/Legion_5_pro.png",
+      color: Color(0XFF0097A7)),
+  Product(
+      id: 5,
+      title: "LEGION 5",
+      price: "18.999.999",
+      size: "364 x 260 x 24",
+      description:
+          "Offering an abundance of performance options for any gamer in a clean, minimalist design, the Legion 5 15 pairs solid AMD Ryzen 4000 series processors, NVIDIA® GeForce® graphics, and optional SSD hard drive, all thermally tuned via Legion Coldfront 2.0. Enjoy blindingly fast refresh rates on a 100% color accurate FHD display and quick controls with the TrueStrike keyboard to scream past competition.",
+      image: "assets/images/Legion_5.png",
+      color: Color(0XFFB2EBF2)),
+  Product(
+      id: 6,
+      title: "LEGION 7",
+      price: "49.999.999",
+      size: "360 x 260 x 20",
+      description:
+          "Advanced cooling supports the highest possible resolution. And its taller, 16:10 aspect ratio and up-to-165Hz refresh rates place you in the gaming “winning zone,” raising your sightlines and strengthening your immersion.",
+      image: "assets/images/Legion_7.png",
+      color: Color(0xFF9E9E9E)),
+  Product(
+      id: 7,
+      title: "LEGION Slim 7i",
+      price: "27.999.999",
+      size: "356 x 250 x 18",
+      description:
+          "The Lenovo Legion Slim 7i is a slim, light gaming powerhouse. The 15.6” FHD display yields laser-sharp, smooth visuals at 144Hz during competitive gameplay, plus 100% color accuracy. Or choose a 4K display at 60Hz for graphics-intense games or to show off highlight reels.",
+      image: "assets/images/Legion_slim_7i.png",
+      color: Color(0XFFBBDEFB)),
+  Product(
+      id: 8,
+      title: "LEGION Mouse M600",
+      price: "999.999",
+      size: "180 x 115 x 55",
+      description:
+          "The Lenovo™ Legion M600 Wireless Gaming Mouse sports an ultra-long battery life and rapid-charging ideal for demanding gaming sessions. Its ergonomic design makes it comfortable for both claw-grip and palm-grip users, as well as left and right-handed gamers too.",
+      image: "assets/images/M600.png",
+      color: Color(0xFF9E9E9E)),
+  Product(
+      id: 9,
+      title: "LEGION Monitor Curve T44W",
+      price: "21.999.999",
+      size: "3840 x 1200",
+      description:
+          "The Lenovo Legion Y44w-10 has about two 24-inch screens in 16: 9 format side by side, without the margin in between. The result is a 32: 9 display with a resolution of 3840 × 1200 pixels.",
+      image: "assets/images/monitor.png",
+      color: Color(0XFFB2EBF2)),
+  Product(
+      id: 10,
+      title: "LEGION Mousepad XL",
+      price: "259.000",
+      size: "900 x 300 x 3",
+      description:
+          "For gamers who demand unlimited control, the full-sized Legion Gaming XL Cloth Mouse and Keyboard Mat provide ample room to hack, slash and shoot your way to victory.",
+      image: "assets/images/mousepad.png",
+      color: Color(0XFF0097A7)),
+  Product(
+      id: 11,
+      title: "LEGION Recon Backpack",
+      price: "350.000",
+      size: "295 x 160 x 495",
+      description:
+          "The Lenovo Legion 15.6 Recon Gaming Backpack is designed for gamers who keep their virtual world beside them during their daily life. This is sleek and modern form offers every pocket a gamer needs, plus the added space for your work and study gear.",
+      image: "assets/images/recon.png",
+      color: Color(0xFF9E9E9E)),
+  Product(
+      id: 12,
+      title: "LEGION TOWER 5",
+      price: "40.999.999",
+      size: "47 x 211 x 450",
+      description:
+          "Forged from a passion for savage power and unmatched speed, the Legion Tower 5i delivers mind-blowing performance. With up to 10th Gen Intel® Core™ i9 processors and top-of-the-line NVIDIA® GeForce graphics.",
+      image: "assets/images/tower.png",
+      color: Color(0XFFBBDEFB)),
+];
